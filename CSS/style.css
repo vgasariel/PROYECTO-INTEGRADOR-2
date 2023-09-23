@@ -1,0 +1,44 @@
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #E4DCCF;
+}
+
+.encabezado {
+    background-color: #EA5455;
+    color: #E4DCCF;
+    padding: .5em;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.producto {
+    margin: 1em;
+    padding: .5em;
+    text-align: center;
+    color: #002B5B;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: white;
+}
+
+.producto p:first-child {
+    font-size: larger;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.producto_boton {
+    border: none;
+    font-size: 2em;
+    padding: 5px;
+    background-color: white;
+    color: #EA5455
+}

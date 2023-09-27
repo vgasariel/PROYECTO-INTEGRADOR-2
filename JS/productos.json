@@ -5,7 +5,7 @@
     "imagen": "img/camisa.jpg",
     "precio": 6999.00,
     "talles": "S, M, L, XL",
-    "puntuación": "****"
+    "puntuacion": "****"
 },
 {
     "nombre": "Suéter",
@@ -14,7 +14,7 @@
     "imagen": "img/sueter.jpg",
     "precio": 8999.00,
     "talles": "S, M, L.",
-    "puntuación": "****"
+    "puntuacion": "****"
 },
 {
     "nombre": "Remera",
@@ -23,7 +23,7 @@
     "imagen": "img/remeras.jpg",
     "precio": 4999.00,
     "talles": "S, M, L, XL",
-    "puntuación": "***"
+    "puntuacion": "***"
 },
 {
     "nombre": "Zapatillas Vans Era",
@@ -32,7 +32,7 @@
     "imagen": "img/zapatillas.jpg",
     "precio": 15999.00,
     "talles": "35 a 47 (Consultar Stock).",
-    "puntuación": "*****"
+    "puntuacion": "*****"
 },
 {
     "nombre": "Cartera",
@@ -41,6 +41,6 @@
     "imagen": "img/bolso.jpg",
     "precio": 9799.00,
     "talles": "",
-    "puntuación": "****"
+    "puntuacion": "****"
 }
 ]

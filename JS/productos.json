@@ -4,7 +4,8 @@
     "desarrollo": "Camisa leñadora manga larga unisex. Elaborada con tela viyela e ideal para la temporada Otoño/Invierno.",
     "imagen": "img/camisa.jpg",
     "precio": "6999",
-    "talles": "S, M, L, XL"
+    "talles": "S, M, L, XL",
+    "puntuación": "****"
 },
 {
     "nombre": "Suéter",
@@ -12,7 +13,8 @@
     "desarrollo": "Suéter moderno azul marino. Ligero y cómodo, unisex.",
     "imagen": "img/sueter.jpg",
     "precio": "8999",
-    "talles": "S, M, L."
+    "talles": "S, M, L.",
+    "puntuación": "****"
 },
 {
     "nombre": "Remera",
@@ -20,7 +22,8 @@
     "desarrollo": "Remera original de algodón y cuello redondo. Con bolsillo delantero y personaje bordado. Realizada artesanalmente, disponible en manga corta y larga. Unisex. No personalizable. Colores disponibles: blanco y negro.",
     "imagen": "img/remeras.jpg",
     "precio": "4999",
-    "talles": "S, M, L, XL"
+    "talles": "S, M, L, XL",
+    "puntuación": "***"
 },
 {
     "nombre": "Zapatillas Vans Era",
@@ -28,7 +31,8 @@
     "desarrollo": "Zapatillas de lona, bajas con cordones marca Vans (colección Era). Diseño liso. Unisex. Disponible en colores: amarillo, rojo y negro.",
     "imagen": "img/zapatillas.jpg",
     "precio": "15999",
-    "talles": "35 a 47 (Consultar Stock)."
+    "talles": "35 a 47 (Consultar Stock).",
+    "puntuación": "*****"
 },
 {
     "nombre": "Cartera",
@@ -36,6 +40,7 @@
     "desarrollo": "Mini cartera de cuero con banda ajustable. Bolso con solapa y broche de imán. Posee un bolsillo interno con cierre. Disponible en colores negro y marrón claro.",
     "imagen": "img/bolso.jpg",
     "precio": "9799",
-    "talles": ""
+    "talles": "",
+    "puntuación": "****"
 }
 ]

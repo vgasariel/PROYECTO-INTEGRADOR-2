@@ -61,7 +61,8 @@ ul {
     font-size: 2em;
     padding: 5px;
     background-color: white;
-    color: #EA5455
+    color: #EA5455;
+    justify-self: end;
 }
 
 article {
@@ -110,10 +111,6 @@ article p:last-of-type {
 
     .producto p:first-child{
         grid-column: auto;
-    }
-
-    .producto_boton {
-        justify-self: end;
     }
 
     article {

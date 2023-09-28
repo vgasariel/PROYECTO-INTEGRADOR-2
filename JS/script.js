@@ -2,7 +2,6 @@ const main = document.querySelector("main");
 let productos;
 
 const cargarProductos = async () => {
-    localStorage.clear
     const response = await fetch("JS/productos.json");
     productos = await response.json()
     localStorage.setItem("productos", JSON.stringify(productos));    

@@ -3,8 +3,6 @@ const articulo = document.querySelector("article");
 id = sessionStorage.getItem("id");
 
 productos = JSON.parse(localStorage.getItem("productos"));
-console.log(productos);
-
 
 productos.forEach(producto => {
     if (producto.nombre == id) {
@@ -12,10 +10,15 @@ productos.forEach(producto => {
             `<h2>${producto.nombre}</h2>
             <p>${producto.descripcion}</p>
             <img src=${producto.imagen} alt=${producto.descripcion}>
-            <p>${producto.desarrollo}</p>
-            <p>$${producto.precio}</p>`
+            <p>${producto.desarrollo}</p>`            
         );
 
+        if (producto.talles) {
+            articulo.innerHTML += `<p>Talles: ${producto.talles}</p>`
+        }
+
+        articulo.innerHTML += `<p>$${producto.precio}</p>`
+        
         let ul = document.createElement("ul");
         ul.classList.add("calificacion");
         for (i=0; i<5; i++){

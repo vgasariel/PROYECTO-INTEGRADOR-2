@@ -13,15 +13,17 @@ productos.forEach(producto => {
             <p>${producto.descripcion}</p>
             <img src=${producto.imagen} alt=${producto.descripcion}>
             <p>${producto.desarrollo}</p>
-            <p>$${producto.precio}</p>
-            <ul class="calificacion">
-            <li class="bx bxs-star"></li>
-            <li class="bx bxs-star"></li>
-            <li class="bx bxs-star"></li>
-            <li class="bx bxs-star"></li>
-            <li class="bx bxs-star"></li>
-            </ul>`
+            <p>$${producto.precio}</p>`
         );
+
+        let ul = document.createElement("ul");
+        ul.classList.add("calificacion");
+        for (i=0; i<5; i++){
+            ul.innerHTML += (
+                `<li class="bx bxs-star"></li>`
+            )
+        }
+        articulo.appendChild(ul);
 
         let estrellas = document.querySelectorAll("li");
         for (i=0; i<producto.puntuacion.length; i++) {

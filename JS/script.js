@@ -2,19 +2,18 @@ const main = document.querySelector("main");
 let productos;
 
 const cargarProductos = async () => {
-    const response = await fetch("JS/productos.json");
-    productos = await response.json()
-    localStorage.setItem("productos", JSON.stringify(productos));    
+    productos = localStorage.getItem("productos");
+    if (productos == null) {
+      const response = await fetch("JS/productos.json");
+        productos = await response.json()
+        localStorage.setItem("productos", JSON.stringify(productos));
+    } else if (typeof productos == "string") {
+        productos = JSON.parse(productos);
+    }   
 }
 
-productos = localStorage.getItem("productos");
-if (productos == null) {
-    cargarProductos();
-} else if (typeof productos == "string") {
-    productos = JSON.parse(productos);
-}
-
-productos.forEach(producto => {
+cargarProductos().then( () => {
+    productos.forEach(producto => {
     let item = document.createElement("div");
     item.classList.add("producto");
     item.innerHTML = (
@@ -31,4 +30,8 @@ productos.forEach(producto => {
 
     item.appendChild(boton);
     main.appendChild(item);
-});
+    });
+})
+
+
+

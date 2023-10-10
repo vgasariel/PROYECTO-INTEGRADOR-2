@@ -4,34 +4,34 @@ id = sessionStorage.getItem("id");
 
 productos = JSON.parse(localStorage.getItem("productos"));
 
-productos.forEach(producto => {
-    if (producto.nombre == id) {
-        articulo.innerHTML = (
-            `<h2>${producto.nombre}</h2>
-            <p>${producto.descripcion}</p>
-            <img src=${producto.imagen} alt=${producto.descripcion}>
-            <p>${producto.desarrollo}</p>`            
-        );
+let productoElegido = productos.find(function(producto) {
+    return producto.nombre == id;
+});
 
-        if (producto.talles) {
-            articulo.innerHTML += `<p>Talles: ${producto.talles}</p>`
-        }
 
-        articulo.innerHTML += `<p>$${producto.precio}</p>`
-        
-        let ul = document.createElement("ul");
-        ul.classList.add("calificacion");
-        for (i=0; i<5; i++){
-            ul.innerHTML += (
-                `<li class="bx bxs-star"></li>`
-            )
-        }
-        articulo.appendChild(ul);
-
-        let estrellas = document.querySelectorAll("li");
-        for (i=0; i<producto.puntuacion.length; i++) {
-            estrellas[i].classList.add("marcado");
-        }
-        }
-    }
+articulo.innerHTML = (
+        `<h2>${productoElegido.nombre}</h2>
+        <p>${productoElegido.descripcion}</p>
+        <img src=${productoElegido.imagen} alt=${productoElegido.descripcion}>
+        <p>${productoElegido.desarrollo}</p>`            
 );
+
+if (productoElegido.talles) {
+    articulo.innerHTML += `<p>Talles: ${productoElegido.talles}</p>`
+}
+
+articulo.innerHTML += `<p>$${productoElegido.precio}</p>`
+        
+let ul = document.createElement("ul");
+ul.classList.add("calificacion");
+for (i=0; i<5; i++){
+    ul.innerHTML += (
+    `<li class="bx bxs-star"></li>`
+    )
+}
+articulo.appendChild(ul);
+
+let estrellas = document.querySelectorAll("li");
+for (i=0; i<productoElegido.puntuacion.length; i++) {
+    estrellas[i].classList.add("marcado");
+};
